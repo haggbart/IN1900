@@ -3,13 +3,15 @@
 import numpy as np
 from matplotlib.pyplot import plot, xlabel, ylabel, show
 
+
 def y(t):
     return A*np.exp(-gamma*t)*np.cos(np.sqrt(k/m)*t)
 
-A = 0.3 # m
-k = 4 # kg/s^2
-gamma = 0.15 # s^-1
-m = 9 # kg
+
+A = 0.3  # m
+k = 4  # kg/s^2
+gamma = 0.15  # s^-1
+m = 9  # kg
 
 start = 0
 stop = 25
@@ -33,6 +35,7 @@ plot(t_array_old, y_array_old)
 xlabel('Tid (s)')
 ylabel('Høyde (m)')
 show()
+print(y_array)
 
 '''
 Terminal> oscilating_spring.py"
