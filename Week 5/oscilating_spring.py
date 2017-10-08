@@ -35,7 +35,7 @@ plot(t_array_old, y_array_old)
 xlabel('Tid (s)')
 ylabel('Høyde (m)')
 show()
-print(y_array)
+
 
 '''
 Terminal> oscilating_spring.py"
