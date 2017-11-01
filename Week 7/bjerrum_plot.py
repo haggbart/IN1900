@@ -14,7 +14,8 @@ co3 = (k1*k2) / (H**2 + k1*H + k1*k2)
 
 cross1 = np.argwhere(np.diff(np.sign(co2 - hco3)) != 0).reshape(-1) + 0
 cross2 = np.argwhere(np.diff(np.sign(hco3 - co3)) != 0).reshape(-1) + 0
-
+print(np.sign(hco3 - co3))
+print(np.diff(np.sign(hco3 - co3)) != 0)
 
 
 plt.plot(pH, co2, label = '[CO2(aq)]')

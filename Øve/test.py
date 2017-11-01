@@ -1,4 +1,3 @@
-x = 6
-y = -2
-c = x >= 10 or y != -2
-print(c)
+d = {-2:6, 6:3, 3:7}
+for key in sorted(d):
+    print('Key = %g and value = %g' % (key, d[key]))
