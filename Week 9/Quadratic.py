@@ -8,10 +8,9 @@ class Quadratic(object):
     def value(self, x):
         return self.a*x**2 + self.b*x + self.c
 
-    @staticmethod
-    def table(L, R, n=5):
+    def table(self, L, R, n=5):
         x = np.linspace(L, R, n)
-        y = q.value(x)
+        y = self.value(x)
         return zip(x, y)
 
     def root(self):
